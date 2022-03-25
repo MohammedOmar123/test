@@ -1,0 +1,283 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #162964;
+}
+a {
+  text-decoration: none;
+  color: #162964;
+}
+section.continar-all-page {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+.ri-arrow-left-s-line {
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.xMark {
+  border: none;
+  background: none;
+  margin-right: 4px;
+  font-weight: bolder;
+}
+.xDiv {
+  text-align: right;
+  margin-bottom: 20px;
+  margin-right: 290px;
+}
+#drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  width: 480px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 6px 16px 4px rgba(0, 0, 0, 0.61);
+}
+li {
+  color: #162964;
+  list-style-type: none;
+  font-weight: bold;
+  margin-left: 15px;
+  line-height: 2.4rem;
+}
+.drawerI {
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.fa-info-circle {
+  margin-bottom: 25px;
+}
+.social-media-link {
+  display: flex;
+  margin-left: 1.8%;
+  margin-top: 15px;
+}
+.social-media-link a i {
+  font-size: 20px;
+  padding-left: 5px;
+}
+.menu-element i {
+  padding-right: 9px;
+  font-size: 20px;
+}
+/************ desktop ***********************/
+nav {
+  display: none;
+}
+.social-media {
+  display: none;
+}
+/************ desktop ***********************/
+h2 {
+  margin-top: 10px;
+  color: #162964;
+}
+
+div.continar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bought {
+  position: relative;
+  margin-bottom: 17px;
+  width: 94%;
+  height: 200px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.bought:hover {
+  box-shadow: 2px 8px 25px rgba(65, 63, 63, 0.15);
+  transform: translate3D(0, -2px, 0);
+}
+.bought div.image-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+.images {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  display: block;
+  max-width: 90%;
+  max-height: 150px;
+}
+
+.name-price {
+  position: absolute;
+  bottom: 20px;
+  right: 8px;
+  width: 40px;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2% 1.1rem 2%;
+  flex-direction: column;
+}
+.name-price .name-phone {
+  position: absolute;
+  right: 40px;
+  margin-top: 10%;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 130px;
+  height: 60px;
+  width: 155px;
+  color: #000000;
+}
+.name-price .price {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 10px;
+}
+.delete-icon {
+  position: absolute;
+  width: 1.8rem;
+  cursor: pointer;
+  bottom: 20px;
+  left: 10px;
+  color: #dda800;
+}
+
+/*********************/
+
+.fixedPaymentButton {
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;}
+
+.pricr-container {
+  color: #bf9200;
+  font-weight: bold;
+}
+
+.total {
+  width: 100px;
+  height: 42px;
+  margin-right: 1%;
+  background-color: white;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  font-weight: bold;
+}
+.buy {
+  width: 220px;
+  height: 43px;
+  border-radius: 12px;
+  background-color: #162964;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .bought {
+    width: calc(92% / 2);
+  }
+
+  .total {
+    width: 150px;
+    margin-right: 1%;
+  }
+  .buy {
+    width: 250px;
+    height: 43px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .menu-icon {
+    display: none;
+  }
+  nav {
+    visibility: visible;
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+  }
+  nav li a {
+    text-decoration: none;
+    color: #162964;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .continar {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .bought {
+    width: calc(94% / 2);
+  }
+  .name-price .name-phone {
+    right: 95px;
+  }
+  h2 {
+    margin-left: 12%;
+  }
+  section {
+    background-color: white;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #f5f5f5;
+    width: 70px;
+    border-radius: 15px;
+    height: 250px;
+    position: fixed;
+    right: -20px;
+    top: 240px;
+  }
+  .social-media a {
+    text-decoration: none;
+    color: #162964;
+  }
+}

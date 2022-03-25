@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css" />
+    <title>Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+   <!-- icon Library -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <section class="continar-all-page">
+              <!--  *************** Start  Header  ************* -->
+
+        <!-- header for mobile and ipad  -->
+        <header>
+       <a href="../index.html"> <i class="ri-arrow-left-s-line"></i></a>
+          <form class="search-form">
+            <img src ="../images/Search.svg"class = "search-icon" alt="" />
+            <input
+              type="text"
+              placeholder="    Search"
+              class="search-input"
+            />
+          </form>
+      <!-- header element for desktop-->
+      <nav >
+        <li>   <a href="../index.html"  >Home </a>  </li>
+        <li>    <a href="../cartPage/cart.html"  > My Cart</a> </li>
+        <li>    <a href="../aboutPage/about.html" >About Us </a> </li>
+      </nav>
+      <div class="social-media">
+        <li> <a href="https://www.facebook.com/"><i  style="font-size: 30px;" class="ri-facebook-circle-fill"></i></a> </li>
+        <li><a href="https://www.instagram.com/"><i style="font-size: 30px;" class="ri-instagram-fill"></i></a></li>
+        <li><a href="https://twitter.com/"> <i style="font-size: 30px;" class="ri-twitter-fill"></i></a></li>
+      </div>
+ <!-- header element for mobile and ipad -->
+ <a   class ="menu-icon "href="#" onclick="displayDrawer()" style="text-decoration: none"><i  style="font-size: 28px;" class="ri-menu-line"></i></a>
+ <div id="drawer" style="display: none" >
+         <div class="drawerMenu">
+           <div class="xDiv">
+             <button class="xMark" onclick="displayDrawer()">X</button>
+           </div>
+           <ul class="menu-element">
+             <li>  <a href="../index.html"><i class="ri-home-4-fill"></i> Home</a></li>
+             <li> <a href="../cartPage/cart.html"><i class="ri-shopping-bag-fill"></i>My Cart</i></a></li>
+             <li><a href="../aboutPage/about.html"><i class="ri-information-fill"></i>About Us</a></li>
+           </ul>
+           <ul class="social-media-link">
+             <li> <a href="https://www.facebook.com/"><i class="ri-facebook-circle-fill"></i></a> </li>
+             <li> <a href="https://www.instagram.com/"><i class="ri-instagram-fill"></i></a></li>
+             <li> <a href="https://twitter.com/"><i class="ri-twitter-fill"></i></a></li>
+           </ul>
+        </header>
+        <!--  *************** End Header  ************* -->
+  
+          <div class="h2-and-cart">
+              <h2>Our Top Products</h2>    
+            <a href="/cartPage/cart.html" class="open-cart-link"><i  id="link-to-cart"class="ri-shopping-bag-fill"></i></a>  
+           </div>
+            <div class="all-item" id="continar">
+
+        <!--  **************start prototype card item ************** -->
+        <!-- <div class="product-item">
+          <img class="product-img" src="image/product.png" alt="product" />
+          <p class="product-name">iphone 11</p>
+          <div class="price-cart">
+            <p class="price">800 </p> <span class="dollar">$</span> 
+            <img  class="add-to-cart" src="/image/addToCart.svg" alt="" />
+          </div>
+        </div>  -->
+        <!--  **************end  prototype card item ************** -->
+      </div>
+    </section>
+    <script src="products.js"></script>
+</body>
+</html>

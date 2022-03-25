@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+          <img src="./images/logo.svg" class="logo" alt="logo" />
+          <div class="horz-menu">
+            <ul>
+              <!-- link  لا تنسى -->
+              <a href="#">Home</li></a>
+              <a href="./cartPage/cart.html">My Cart</li></a>
+              <a href="./aboutPage/about.html">About Us</li></a>
+            </ul>
+          </div>
+          <a href="#" onclick="displayDrawer()"><i class="fa fas fa-bars"></i></a>
+        </div>
+        <div id="drawer" style="display: none">
+          <div class="drawer-menu">
+            <div class="x-div">
+              <i class="fa-solid fa-x" onclick="displayDrawer()"></i>
+            </div>
+  
+            <ul>
+              <!-- لاتنسى link -->
+              <a href="#"><li><i class="fa fa-home drawer-i"></i> Home</li></a>
+              <a href="./cartPage/cart.html"><li><i class="fa fa-shopping-bag drawer-i"></i>My Cart</li></a>
+              <a href="./aboutPage/about.html"><li><i class="fa fa-info-circle drawer-i"></i>About Us</li></a>
+              <li>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter social"></i></a>
+              </li>
+            </ul>
+            <!-- link here-->
+          </div>
+        </div>
+      </header>
+      <section id="splash-div">
+        <div class="splash">
+          <img src="./images/logo.svg" alt="" class="fade-in" />
+        </div>
+      </section>
+    <div class="container">
+        <div class="slider">
+            <picture>  
+                <source media="(min-width: 800px)" srcset="https://static.techspot.com/articles-info/2372/images/2021-11-27-image-18.jpg" />
+                <source media="(min-width: 700px)" srcset="https://i.pcmag.com/imagery/reviews/07GmIupznWhAzDQ3Z7li99a-1.fit_lim.size_625x365.v1632849626.jpg">
+                <img src="https://www.cnet.com/a/img/resize/55fb60ca6a8cf5035ac2b5044ef54e6f87f6be3f/2020/08/18/b7168aea-9f7e-47bb-9f31-4cb8ad92fbc7/lg-note-20-ultra-5g-iphone-11-se-google-pixel-4a-lg-velvet-6133.jpg?auto=webp&fit=crop&height=675&width=1200">
+            </picture>
+            <picture>  
+                <source media="(min-width: 800px)" srcset="https://cdn.mos.cms.futurecdn.net/sVgZ7T7fU93edYpTLjDhk6.jpg" />
+                <source media="(min-width: 700px)" srcset="https://fdn.gsmarena.com/imgroot/reviews/22/xiaomi-redmi-note-11/-728x314/gsmarena_001.jpg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyz31zw2hrJglwoYaVl7cbuXxiEqwXgoHsH3m3aMQymc7uUXZ7xmPql1zZBT_9S6OoJRY&usqp=CAU">
+            </picture>
+            <picture>  
+                <source media="(min-width: 800px)" srcset="https://i.ytimg.com/vi/l4h7U6SGOFw/maxresdefault.jpg">
+                <source media="(min-width: 700px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPPJuOM1ZFLMQUma8CK2wOc95cs_z__4I8sA&usqp=CAU">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPPJuOM1ZFLMQUma8CK2wOc95cs_z__4I8sA&usqp=CAU">
+            </picture>
+            <picture>  
+                <source media="(min-width: 800px)" srcset="https://petapixel.com/assets/uploads/2022/02/The-iQoo-9-Brings-Flagship-Cameras-to-Sub-900-Smartphones.jpg">
+                <source media="(min-width: 700px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHhWNpepwLtc87reBT19C7Pt63rclr_AmZ4A&usqp=CAU">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHhWNpepwLtc87reBT19C7Pt63rclr_AmZ4A&usqp=CAU">
+            </picture>
+            <picture>  
+                <source media="(min-width: 800px)" srcset="https://fdn.gsmarena.com/imgroot/news/20/09/top-10-us-smartphones-first-week-september/-1200w2/gsmarena_000.jpg">
+                <source media="(min-width: 700px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWU0eyB25JFljpZ0W_QWYdN46WfkZ0JBvQBQ&usqp=CAU" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWU0eyB25JFljpZ0W_QWYdN46WfkZ0JBvQBQ&usqp=CAU">
+            </picture>
+            <picture>  
+                <source media="(min-width: 800px)" srcset="https://i.ytimg.com/vi/cJKQdzopuco/maxresdefault.jpg">
+                <source media="(min-width: 700px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS81NevPpHv8Za4OYv_0it_bpSntkZi-VqsEQ&usqp=CAU" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS81NevPpHv8Za4OYv_0it_bpSntkZi-VqsEQ&usqp=CAU">
+            </picture>
+        </div>
+        <button class="next" id="nextBtn"><i class="uil uil-arrow-right"></i></button>
+        <button class="prev" id="prevBtn"><i class="uil uil-arrow-left"></i></button>
+    </div>
+    <section id="top-brands">
+        <h3>Our Top Brands</h3>
+        <hr>
+        <div class="brand-social">
+          <div id="brands-cards"></div>
+          <div id="social-media" style="display: block">
+            <div class="social-menu-fixed">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter social"></i></a>
+                </li>
+              </ul>
+              <!-- link here-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--                         TopProducts                              -->
+    <section class="top-products" id="top-products-div">
+        <h3>latest Products</h3>
+        <hr>
+        <div class="carousel">
+          <div class="nav nav-left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="products-cards carousel-content"></div>
+          <div class="nav nav-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+    <script src="file.js"></script>
+</body>
+</html>
